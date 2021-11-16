@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PrimeiraTela</string>
+    <string name="ainda_nao_tem_uma_conta">Ainda não tem uma conta?</string>
+    <string name="bem_vindo_ao_layout_app">Bem vindo ao Layout App</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="digite_seu_email">Digite seu email</string>
+    <string name="button_login">Login</string>
+    <string name="crie_uma_agora"><u>Crie uma agora</u></string>
+</resources>
