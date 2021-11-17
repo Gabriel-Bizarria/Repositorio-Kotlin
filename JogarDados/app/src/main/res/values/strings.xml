@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Jogar Dados</string>
+    <string name="jogar">Jogar</string>
+    <string name="imagem_dado">Imagem Dado</string>
+</resources>
