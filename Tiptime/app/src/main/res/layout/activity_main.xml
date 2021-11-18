@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/costOfService"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor_gasto"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/questAboutService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/como_foi_o_servico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costOfService" />
+
+    <RadioGroup
+        android:id="@+id/tipOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/option_fifteen"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questAboutService">
+
+        <RadioButton
+            android:id="@+id/option_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao_otimo" />
+
+        <RadioButton
+            android:id="@+id/option_eighteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao_bom" />
+
+        <RadioButton
+            android:id="@+id/option_fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcao_mediano" />
+
+    </RadioGroup>
+
+
+    <Switch
+        android:id="@+id/roundUpSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="@string/arrendondar_o_valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tipOptions"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundUpSwitch" />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_amount"
+        tools:text="Valor da gorjeta: R$10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
